@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Ram Public School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SHRI RAM PUBLIC SCHOOL</h1>
+        <p>Building Bright Futures</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Shri Ram Public School</h2>
+        <p>Learn Today, Lead Tomorrow</p>
+        <a href="#admission" class="btn">Apply for Admission</a>
+    </section>
+
+    <section id="about">
+        <h2>About Our School</h2>
+        <p>
+            Shri Ram Public School is dedicated to providing
+            quality education and helping students build
+            a bright and successful future.
+        </p>
+    </section>
+
+    <section id="facilities">
+        <h2>Our Facilities</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Smart Classrooms</h3>
+                <p>Modern learning environment for students.</p>
+            </div>
+
+            <div class="card">
+                <h3>Library</h3>
+                <p>A place to read, learn and explore.</p>
+            </div>
+
+            <div class="card">
+                <h3>Sports</h3>
+                <p>Encouraging fitness and teamwork.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Our School Gallery</h2>
+        <img src="images/school1.jpg" alt="School Building">
+    </section>
+
+    <section id="admission">
+        <h2>Online Admission Enquiry</h2>
+        <p>Fill in the form to enquire about admission.</p>
+
+        <form id="admissionForm">
+
+            <input type="text" id="studentName"
+                placeholder="Student Name" required>
+
+            <input type="text" id="parentName"
+                placeholder="Parent Name" required>
+
+            <select id="className" required>
+                <option value="">Select Class</option>
+                <option>Nursery</option>
+                <option>LKG</option>
+                <option>UKG</option>
+                <option>Class 1</option>
+                <option>Class 2</option>
+                <option>Class 3</option>
+                <option>Class 4</option>
+                <option>Class 5</option>
+                <option>Class 6</option>
+                <option>Class 7</option>
+                <option>Class 8</option>
+                <option>Class 9</option>
+                <option>Class 10</option>
+                <option>Class 11</option>
+                <option>Class 12</option>
+            </select>
+
+            <input type="tel" id="mobile"
+                placeholder="Mobile Number"
+                pattern="[0-9]{10}"
+                maxlength="10" required>
+
+            <textarea id="message"
+                placeholder="Your Message"></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+
+            <p id="formMessage"></p>
+
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-card">
+            <p><strong>School:</strong> Shri Ram Public School</p>
+
+            <p><strong>Address:</strong> Main Road, Harinagar Dooma</p>
+
+            <p><strong>Mobile:</strong>
+                <a href="tel:8395932460">8395932460</a>,
+                <a href="tel:8059673530">8059673530</a>
+            </p>
+
+            <p><strong>Email:</strong>
+                <a href="mailto:satishtanwar1981@gmail.com">
+                    satishtanwar1981@gmail.com
+                </a>
+            </p>
+
+            <h3>Enquire on WhatsApp</h3>
+
+            <a class="whatsapp-btn"
+               href="https://wa.me/918395932460?text=Hello%2C%20I%20want%20to%20enquire%20about%20admission%20at%20Shri%20Ram%20Public%20School."
+               target="_blank">
+               WhatsApp: 8395932460
+            </a>
+
+            <a class="whatsapp-btn"
+               href="https://wa.me/918059673530?text=Hello%2C%20I%20want%20to%20enquire%20about%20admission%20at%20Shri%20Ram%20Public%20School."
+               target="_blank">
+               WhatsApp: 8059673530
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Shri Ram Public School</p>
+        <p>Learning Today, Leading Tomorrow</p>
+    </footer>
+
+    <script>
+        document.getElementById("admissionForm")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            document.getElementById("formMessage").textContent =
+                "Thank you! Your enquiry form demo is complete.";
+
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

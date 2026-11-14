@@ -1,0 +1,202 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+header {
+    background-color: #123b70;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #09284d;
+    padding: 18px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.hero {
+    background: linear-gradient(135deg, #dcecff, #a9ccf5);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #123b70;
+}
+
+.hero p {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #123b70;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+section {
+    padding: 55px 25px;
+    text-align: center;
+}
+
+section h2 {
+    color: #123b70;
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #cccccc;
+}
+
+.card h3 {
+    color: #123b70;
+    margin-bottom: 12px;
+}
+
+#gallery img {
+    width: 70%;
+    max-width: 600px;
+    border-radius: 12px;
+}
+
+#admission {
+    background-color: #eaf2fc;
+}
+
+#admissionForm {
+    background-color: white;
+    max-width: 550px;
+    margin: 25px auto 0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #cccccc;
+}
+
+#admissionForm input,
+#admissionForm select,
+#admissionForm textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#admissionForm textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#admissionForm button {
+    width: 100%;
+    padding: 14px;
+    background-color: #123b70;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#formMessage {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.contact-card {
+    background-color: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #cccccc;
+}
+
+.contact-card p {
+    margin: 12px 0;
+}
+
+.contact-card a {
+    color: #123b70;
+    text-decoration: none;
+}
+
+.contact-card .whatsapp-btn {
+    display: block;
+    background-color: #168b50;
+    color: white;
+    padding: 14px;
+    margin: 15px auto;
+    max-width: 300px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #123b70;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+}
