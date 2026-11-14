@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,48 +68,14 @@
 
     <section id="admission">
         <h2>Online Admission Enquiry</h2>
-        <p>Fill in the form to enquire about admission.</p>
+        <p>Click below to fill out our admission enquiry form.</p>
 
-        <form id="admissionForm">
-
-            <input type="text" id="studentName"
-                placeholder="Student Name" required>
-
-            <input type="text" id="parentName"
-                placeholder="Parent Name" required>
-
-            <select id="className" required>
-                <option value="">Select Class</option>
-                <option>Nursery</option>
-                <option>LKG</option>
-                <option>UKG</option>
-                <option>Class 1</option>
-                <option>Class 2</option>
-                <option>Class 3</option>
-                <option>Class 4</option>
-                <option>Class 5</option>
-                <option>Class 6</option>
-                <option>Class 7</option>
-                <option>Class 8</option>
-                <option>Class 9</option>
-                <option>Class 10</option>
-                <option>Class 11</option>
-                <option>Class 12</option>
-            </select>
-
-            <input type="tel" id="mobile"
-                placeholder="Mobile Number"
-                pattern="[0-9]{10}"
-                maxlength="10" required>
-
-            <textarea id="message"
-                placeholder="Your Message"></textarea>
-
-            <button type="submit">Submit Enquiry</button>
-
-            <p id="formMessage"></p>
-
-        </form>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDOBXcSk8lSMUpdIqx0KzKhW7UnDL84iDn10vU2_F_PsatBQ/viewform?usp=header"
+           class="btn"
+           target="_blank"
+           rel="noopener noreferrer">
+           Fill Admission Enquiry Form
+        </a>
     </section>
 
     <section id="contact">
@@ -152,18 +118,6 @@
         <p>Learning Today, Leading Tomorrow</p>
     </footer>
 
-    <script>
-        document.getElementById("admissionForm")
-        .addEventListener("submit", function(event) {
-
-            event.preventDefault();
-
-            document.getElementById("formMessage").textContent =
-                "Thank you! Your enquiry form demo is complete.";
-
-            this.reset();
-        });
-    </script>
-
 </body>
 </html>
+```
